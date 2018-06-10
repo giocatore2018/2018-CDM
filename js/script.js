@@ -33,116 +33,65 @@ $('#matchA4').append(GroupeA[1] + ' - ' + GroupeA[3]);
 $('#matchA5').append(GroupeA[0] + ' - ' + GroupeA[1]);
 $('#matchA6').append(GroupeA[3] + ' - ' + GroupeA[2]);
 
-/*for(i=1 ; i<7 ; i++)
-{
-  window['matchA'+i].appendTo($matchsGA);
-}
-*/
-
 // Remplissage des matchs du groupe B
-var $matchsGB = $('#matchsGroupeB');
-var $matchB1 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeB[3] + ' - ' + GroupeB[2] + ' </div><div class="col-md-4 col-xs-6"><input id="BE3M1" type="number">  - <input id="BE2M1" type="number"></div></div>');
-var $matchB2 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeB[0] + ' - ' + GroupeB[1] + ' </div><div class="col-md-4 col-xs-6"><input id="BE0M1" type="number">  - <input id="BE1M1" type="number"></div></div>');
-var $matchB3 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeB[0] + ' - ' + GroupeB[3] + ' </div><div class="col-md-4 col-xs-6"><input id="BE0M2" type="number">  - <input id="BE3M2" type="number"></div></div>');
-var $matchB4 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeB[2] + ' - ' + GroupeB[1] + ' </div><div class="col-md-4 col-xs-6"><input id="BE2M2" type="number">  - <input id="BE1M2" type="number"></div></div>');
-var $matchB5 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeB[2] + ' - ' + GroupeB[0] + ' </div><div class="col-md-4 col-xs-6"><input id="BE2M3" type="number">  - <input id="BE0M3" type="number"></div></div>');
-var $matchB6 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeB[1] + ' - ' + GroupeB[3] + ' </div><div class="col-md-4 col-xs-6"><input id="BE1M3" type="number">  - <input id="BE3M3" type="number"></div></div>');
-$matchB1.appendTo($matchsGB);
-$matchB2.appendTo($matchsGB);
-$matchB3.appendTo($matchsGB);
-$matchB4.appendTo($matchsGB);
-$matchB5.appendTo($matchsGB);
-$matchB6.appendTo($matchsGB);
+$('#matchB1').append(GroupeB[3] + ' - ' + GroupeB[2]);
+$('#matchB2').append(GroupeB[0] + ' - ' + GroupeB[1]);
+$('#matchB3').append(GroupeB[0] + ' - ' + GroupeB[3]);
+$('#matchB4').append(GroupeB[2] + ' - ' + GroupeB[1]);
+$('#matchB5').append(GroupeB[2] + ' - ' + GroupeB[0]);
+$('#matchB6').append(GroupeB[1] + ' - ' + GroupeB[3]);
+
 
 // Remplissage des matchs du groupe C
-var $matchsGC = $('#matchsGroupeC');
-var $matchC1 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeC[0] + ' - ' + GroupeC[3] + ' </div><div class="col-md-4 col-xs-6"><input id="CE0M1" type="number">  - <input id="CE3M1" type="number"></div></div>');
-var $matchC2 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeC[1] + ' - ' + GroupeC[2] + ' </div><div class="col-md-4 col-xs-6"><input id="CE1M1" type="number">  - <input id="CE2M1" type="number"></div></div>');
-var $matchC3 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeC[2] + ' - ' + GroupeC[3] + ' </div><div class="col-md-4 col-xs-6"><input id="CE2M2" type="number">  - <input id="CE3M2" type="number"></div></div>');
-var $matchC4 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeC[0] + ' - ' + GroupeC[1] + ' </div><div class="col-md-4 col-xs-6"><input id="CE0M2" type="number">  - <input id="CE1M2" type="number"></div></div>');
-var $matchC5 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeC[2] + ' - ' + GroupeC[0] + ' </div><div class="col-md-4 col-xs-6"><input id="CE2M3" type="number">  - <input id="CE0M3" type="number"></div></div>');
-var $matchC6 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeC[3] + ' - ' + GroupeC[1] + ' </div><div class="col-md-4 col-xs-6"><input id="CE3M3" type="number">  - <input id="CE1M3" type="number"></div></div>');
-$matchC1.appendTo($matchsGC);
-$matchC2.appendTo($matchsGC);
-$matchC3.appendTo($matchsGC);
-$matchC4.appendTo($matchsGC);
-$matchC5.appendTo($matchsGC);
-$matchC6.appendTo($matchsGC);
+$('#matchC1').append(GroupeC[0] + ' - ' + GroupeC[3]);
+$('#matchC2').append(GroupeC[1] + ' - ' + GroupeC[2]);
+$('#matchC3').append(GroupeC[2] + ' - ' + GroupeC[3]);
+$('#matchC4').append(GroupeC[0] + ' - ' + GroupeC[1]);
+$('#matchC5').append(GroupeC[2] + ' - ' + GroupeC[0]);
+$('#matchC6').append(GroupeC[3] + ' - ' + GroupeC[1]);
+
 
 // Remplissage des matchs du groupe D
-var $matchsGD = $('#matchsGroupeD');
-var $matchD1 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeD[0] + ' - ' + GroupeD[2] + ' </div><div class="col-md-4 col-xs-6"><input id="DE0M1" type="number">  - <input id="DE2M1" type="number"></div></div>');
-var $matchD2 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeD[1] + ' - ' + GroupeD[3] + ' </div><div class="col-md-4 col-xs-6"><input id="DE1M1" type="number">  - <input id="DE3M1" type="number"></div></div>');
-var $matchD3 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeD[0] + ' - ' + GroupeD[1] + ' </div><div class="col-md-4 col-xs-6"><input id="DE0M2" type="number">  - <input id="DE1M2" type="number"></div></div>');
-var $matchD4 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeD[3] + ' - ' + GroupeD[2] + ' </div><div class="col-md-4 col-xs-6"><input id="DE3M2" type="number">  - <input id="DE2M2" type="number"></div></div>');
-var $matchD5 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeD[2] + ' - ' + GroupeD[1] + ' </div><div class="col-md-4 col-xs-6"><input id="DE2M3" type="number">  - <input id="DE1M3" type="number"></div></div>');
-var $matchD6 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeD[3] + ' - ' + GroupeD[0] + ' </div><div class="col-md-4 col-xs-6"><input id="DE3M3" type="number">  - <input id="DE0M3" type="number"></div></div>');
-$matchD1.appendTo($matchsGD);
-$matchD2.appendTo($matchsGD);
-$matchD3.appendTo($matchsGD);
-$matchD4.appendTo($matchsGD);
-$matchD5.appendTo($matchsGD);
-$matchD6.appendTo($matchsGD);
+$('#matchD1').append(GroupeD[0] + ' - ' + GroupeD[2]);
+$('#matchD2').append(GroupeD[1] + ' - ' + GroupeD[3]);
+$('#matchD3').append(GroupeD[0] + ' - ' + GroupeD[1]);
+$('#matchD4').append(GroupeD[3] + ' - ' + GroupeD[2]);
+$('#matchD5').append(GroupeD[2] + ' - ' + GroupeD[1]);
+$('#matchD6').append(GroupeD[3] + ' - ' + GroupeD[0]);
+
+
 $// Remplissage des matchs du groupe E
-var $matchsGE = $('#matchsGroupeE');
-var $matchE1 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeE[2] + ' - ' + GroupeE[3] + ' </div><div class="col-md-4 col-xs-6"><input id="EE2M1" type="number">  - <input id="EE3M1" type="number"></div></div>');
-var $matchE2 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeE[0] + ' - ' + GroupeE[1] + ' </div><div class="col-md-4 col-xs-6"><input id="EE0M1" type="number">  - <input id="EE1M1" type="number"></div></div>');
-var $matchE3 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeE[3] + ' - ' + GroupeE[1] + ' </div><div class="col-md-4 col-xs-6"><input id="EE3M2" type="number">  - <input id="EE1M2" type="number"></div></div>');
-var $matchE4 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeE[0] + ' - ' + GroupeE[2] + ' </div><div class="col-md-4 col-xs-6"><input id="EE0M2" type="number">  - <input id="EE2M2" type="number"></div></div>');
-var $matchE5 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeE[3] + ' - ' + GroupeE[0] + ' </div><div class="col-md-4 col-xs-6"><input id="EE3M3" type="number">  - <input id="EE0M3" type="number"></div></div>');
-var $matchE6 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeE[1] + ' - ' + GroupeE[2] + ' </div><div class="col-md-4 col-xs-6"><input id="EE1M3" type="number">  - <input id="EE2M3" type="number"></div></div>');
-$matchE1.appendTo($matchsGE);
-$matchE2.appendTo($matchsGE);
-$matchE3.appendTo($matchsGE);
-$matchE4.appendTo($matchsGE);
-$matchE5.appendTo($matchsGE);
-$matchE6.appendTo($matchsGE);
+$('#matchE1').append(GroupeE[2] + ' - ' + GroupeE[3]);
+$('#matchE2').append(GroupeE[0] + ' - ' + GroupeE[1]);
+$('#matchE3').append(GroupeE[3] + ' - ' + GroupeE[1]);
+$('#matchE4').append(GroupeE[0] + ' - ' + GroupeE[2]);
+$('#matchE5').append(GroupeE[3] + ' - ' + GroupeE[0]);
+$('#matchE6').append(GroupeE[1] + ' - ' + GroupeE[2]);
+
 
 // Remplissage des matchs du groupe F
-var $matchsGF = $('#matchsGroupeF');
-var $matchF1 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeF[0] + ' - ' + GroupeF[1] + ' </div><div class="col-md-4 col-xs-6"><input id="FE0M1" type="number">  - <input id="FE1M1" type="number"></div></div>');
-var $matchF2 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeF[2] + ' - ' + GroupeF[3] + ' </div><div class="col-md-4 col-xs-6"><input id="FE2M1" type="number">  - <input id="FE3M1" type="number"></div></div>');
-var $matchF3 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeF[0] + ' - ' + GroupeF[2] + ' </div><div class="col-md-4 col-xs-6"><input id="FE0M2" type="number">  - <input id="FE2M2" type="number"></div></div>');
-var $matchF4 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeF[3] + ' - ' + GroupeF[1] + ' </div><div class="col-md-4 col-xs-6"><input id="FE3M2" type="number">  - <input id="FE1M2" type="number"></div></div>');
-var $matchF5 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeF[3] + ' - ' + GroupeF[0] + ' </div><div class="col-md-4 col-xs-6"><input id="FE3M3" type="number">  - <input id="FE0M3" type="number"></div></div>');
-var $matchF6 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeF[1] + ' - ' + GroupeF[2] + ' </div><div class="col-md-4 col-xs-6"><input id="FE1M3" type="number">  - <input id="FE2M3" type="number"></div></div>');
-$matchF1.appendTo($matchsGF);
-$matchF2.appendTo($matchsGF);
-$matchF3.appendTo($matchsGF);
-$matchF4.appendTo($matchsGF);
-$matchF5.appendTo($matchsGF);
-$matchF6.appendTo($matchsGF);
+$('#matchF1').append(GroupeF[0] + ' - ' + GroupeF[1]);
+$('#matchF2').append(GroupeF[2] + ' - ' + GroupeF[3]);
+$('#matchF3').append(GroupeF[0] + ' - ' + GroupeF[2]);
+$('#matchF4').append(GroupeF[3] + ' - ' + GroupeF[1]);
+$('#matchF5').append(GroupeF[3] + ' - ' + GroupeF[0]);
+$('#matchF6').append(GroupeF[1] + ' - ' + GroupeF[2]);
 
 // Remplissage des matchs du groupe G
-var $matchsGG = $('#matchsGroupeG');
-var $matchG1 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeG[0] + ' - ' + GroupeG[3] + ' </div><div class="col-md-4 col-xs-6"><input id="GE0M1" type="number">  - <input id="GE0M3" type="number"></div></div>');
-var $matchG2 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeG[2] + ' - ' + GroupeG[1] + ' </div><div class="col-md-4 col-xs-6"><input id="GE2M1" type="number">  - <input id="GE0M1" type="number"></div></div>');
-var $matchG3 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeG[0] + ' - ' + GroupeG[2] + ' </div><div class="col-md-4 col-xs-6"><input id="GE0M2" type="number">  - <input id="GE0M2" type="number"></div></div>');
-var $matchG4 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeG[1] + ' - ' + GroupeG[3] + ' </div><div class="col-md-4 col-xs-6"><input id="GE1M2" type="number">  - <input id="GE0M3" type="number"></div></div>');
-var $matchG5 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeG[3] + ' - ' + GroupeG[2] + ' </div><div class="col-md-4 col-xs-6"><input id="GE3M3" type="number">  - <input id="GE0M2" type="number"></div></div>');
-var $matchG6 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeG[1] + ' - ' + GroupeG[0] + ' </div><div class="col-md-4 col-xs-6"><input id="GE1M3" type="number">  - <input id="GE0M0" type="number"></div></div>');
-$matchG1.appendTo($matchsGG);
-$matchG2.appendTo($matchsGG);
-$matchG3.appendTo($matchsGG);
-$matchG4.appendTo($matchsGG);
-$matchG5.appendTo($matchsGG);
-$matchG6.appendTo($matchsGG);
+$('#matchG1').append(GroupeG[0] + ' - ' + GroupeG[3]);
+$('#matchG2').append(GroupeG[2] + ' - ' + GroupeG[1]);
+$('#matchG3').append(GroupeG[0] + ' - ' + GroupeG[2]);
+$('#matchG4').append(GroupeG[1] + ' - ' + GroupeG[3]);
+$('#matchG5').append(GroupeG[3] + ' - ' + GroupeG[2]);
+$('#matchG6').append(GroupeG[1] + ' - ' + GroupeG[0]);
 
 // Remplissage des matchs du groupe H
-var $matchsGH = $('#matchsGroupeH');
-var matchH1 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeH[1] + ' - ' + GroupeH[3] + ' </div><div class="col-md-4 col-xs-6"><input id="HE1M1" type="number">  - <input id="HE3M1" type="number"></div></div>');
-var matchH2 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeH[0] + ' - ' + GroupeH[2] + ' </div><div class="col-md-4 col-xs-6"><input id="HE0M1" type="number">  - <input id="HE2M1" type="number"></div></div>');
-var matchH3 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeH[3] + ' - ' + GroupeH[2] + ' </div><div class="col-md-4 col-xs-6"><input id="HE3M2" type="number">  - <input id="HE2M2" type="number"></div></div>');
-var matchH4 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeH[0] + ' - ' + GroupeH[1] + ' </div><div class="col-md-4 col-xs-6"><input id="HE0M2" type="number">  - <input id="HE1M2" type="number"></div></div>');
-var matchH5 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeH[3] + ' - ' + GroupeH[0] + ' </div><div class="col-md-4 col-xs-6"><input id="HE3M3" type="number">  - <input id="HE0M3" type="number"></div></div>');
-var matchH6 = $('<div class="row"><div class="col-md-8 col-xs-6">' + GroupeH[2] + ' - ' + GroupeH[1] + ' </div><div class="col-md-4 col-xs-6"><input id="HE2M3" type="number">  - <input id="HE1M3" type="number"></div></div>');
-matchH1.appendTo($matchsGH);
-matchH2.appendTo($matchsGH);
-matchH3.appendTo($matchsGH);
-matchH4.appendTo($matchsGH);
-matchH5.appendTo($matchsGH);
-matchH6.appendTo($matchsGH);
-
+$('#matchH1').append(GroupeH[1] + ' - ' + GroupeH[3]);
+$('#matchH2').append(GroupeH[0] + ' - ' + GroupeH[2]);
+$('#matchH3').append(GroupeH[3] + ' - ' + GroupeH[2]);
+$('#matchH4').append(GroupeH[0] + ' - ' + GroupeH[1]);
+$('#matchH5').append(GroupeH[3] + ' - ' + GroupeH[0]);
+$('#matchH6').append(GroupeH[2] + ' - ' + GroupeH[1]);
 
 //Paramètrages des tableaux
 $(function() {
