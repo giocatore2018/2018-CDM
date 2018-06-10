@@ -1,5 +1,31 @@
-/* Alignement des groupes */
-#groupes{
-  display:flex;
-  justify-content: space-around;
+/* On retire les petites flèches des input de type number
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+     width:40px;
+     border : 1px solid black;
+     border-radius : 8px;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin:0;
+}
+
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button {
+	-o-appearance: none;
+	margin:0
+}
+
+.col-md-2, .col-md-3, .col-md-4,.col-md-5, .col-md-6, .col-md-7 , .col-md-8{
+  border : 1px solid black;
+}
+
+.row{
+  margin:0;
+  margin:auto;
 }
